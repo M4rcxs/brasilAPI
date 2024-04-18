@@ -30,7 +30,11 @@ const getFipe = async (fipe) => {
         // Limpa a tabela antes de adicionar novos dados
         carTableBody.innerHTML = '';
 
+
         data.forEach(car => {
+            if (car.anoModelo > 2024) {
+                car.anoModelo = 2024;
+            }
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${car.marca}</td>
