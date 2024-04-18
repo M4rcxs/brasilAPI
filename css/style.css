@@ -53,3 +53,19 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+a {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    color: #333; /* Cor do texto */
+}
+  
+a:hover {
+    background-color: #e0e0e0; /* Cor de fundo cinza um pouco mais clara no hover */
+}
+  
+  
+  
