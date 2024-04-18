@@ -15,7 +15,6 @@ const fetchFipe = async (fipe) => {
   
     if (APIResponse.status === 200) {
         const data = await APIResponse.json();
-        console.log(data);
         return data;
     }
 }
@@ -52,7 +51,7 @@ const getFipe = async (fipe) => {
 }
 
 button.addEventListener('click', async () => {
-    await getFipe(input.value);
+    await getFipe(input.value.replace(/\D/g, ''));
 });
 
 getFipe(fipeNum);
