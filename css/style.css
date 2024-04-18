@@ -59,13 +59,18 @@ a {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #f2f2f2; /* Cor de fundo cinza discreta */
+    padding: 10px 20px;
     border-radius: 5px;
     color: #333; /* Cor do texto */
-}
+    text-decoration: none;
+    border: none; /* Remover bordas */
+    outline: none; /* Remover contorno ao focar */
+  }
   
-a:hover {
+  a:hover {
     background-color: #e0e0e0; /* Cor de fundo cinza um pouco mais clara no hover */
-}
+  }
   
   
   
