@@ -6,6 +6,7 @@ const carModel = document.querySelector('.car_model');
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
+const button = document.querySelector('.btn-confirm');
 
 let fipeNum = '0';
 
@@ -46,8 +47,7 @@ const getFipe = async (fipe) => {
     }
 }
 
-form.addEventListener('submit', async (event) => {
-    event.preventDefault();
+button.addEventListener('click', async () => {
     await getFipe(input.value);
 });
 
