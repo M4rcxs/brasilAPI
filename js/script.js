@@ -42,16 +42,13 @@ const getFipe = async (fipe) => {
         });
     } else {
         // Se nenhum dado for encontrado, limpa a tabela
-        carTableBody.innerHTML = '<tr><td colspan="3">Nenhum dado encontrado</td></tr>';
+        carTableBody.innerHTML = '<tr><td colspan="5">Nenhum dado encontrado</td></tr>';
     }
 }
-
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     await getFipe(input.value);
 });
-
-
 
 getFipe(fipeNum);
