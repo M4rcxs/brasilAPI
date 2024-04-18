@@ -34,6 +34,8 @@ const getFipe = async (fipe) => {
             row.innerHTML = `
                 <td>${car.marca}</td>
                 <td>${car.modelo}</td>
+                <td>${car.anoModelo}</td>
+                <td>${car.combustivel}</td>
                 <td>${car.valor}</td>
             `;
             carTableBody.appendChild(row);
